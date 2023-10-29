@@ -19,6 +19,9 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+
+
+
         URL resource = getClass().getClassLoader().getResource("com/devstack/pos/view/LoginForm.fxml");
         Parent parent = FXMLLoader.load(resource);
         Scene scene = new Scene(parent);
@@ -32,4 +35,9 @@ public class AppInitializer extends Application {
         }
 
     }
+
+    private void initializeData(){
+
+    }
+
 }
