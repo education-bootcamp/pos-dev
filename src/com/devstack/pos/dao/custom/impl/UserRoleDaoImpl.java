@@ -46,8 +46,9 @@ public class UserRoleDaoImpl implements UserRoleDao {
            /* Criteria criteria = session.createCriteria(UserRole.class);
             criteria.setProjection(Projections.rowCount());
             Long count = (Long) criteria.uniqueResult();*/
-            Query query = session.createQuery("SELECT COUNT(*) FROM user_role");
+            Query query = session.createQuery("SELECT COUNT(*) FROM UserRole");
             Long count =(Long) query.getSingleResult();
+            System.out.println(count);
             return count>0;
         }
     }
