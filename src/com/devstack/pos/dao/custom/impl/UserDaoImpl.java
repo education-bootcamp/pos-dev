@@ -18,12 +18,12 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User find(Integer integer) {
+    public User find(Long id) {
         return null;
     }
 
     @Override
-    public boolean remove(Integer integer) {
+    public boolean remove(Long id) {
         return false;
     }
 

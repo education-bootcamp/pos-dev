@@ -3,24 +3,30 @@ package com.devstack.pos.dao.custom.impl;
 import com.devstack.pos.dao.custom.UserRoleDao;
 import com.devstack.pos.db.HibernateUtil;
 import com.devstack.pos.entity.UserRole;
+import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
+import org.hibernate.criterion.Projections;
+import org.hibernate.query.Query;
 
 import java.util.List;
 
 public class UserRoleDaoImpl implements UserRoleDao {
     @Override
     public boolean create(UserRole userRole) {
-        return false;
+       try(Session session = HibernateUtil.getSession()){
+           session.save(userRole);
+       }
+       return true;
     }
 
     @Override
-    public UserRole find(Integer integer) {
+    public UserRole find(Long id) {
         return null;
     }
 
     @Override
-    public boolean remove(Integer integer) {
+    public boolean remove(Long id) {
         return false;
     }
 
@@ -37,7 +43,12 @@ public class UserRoleDaoImpl implements UserRoleDao {
     @Override
     public boolean isExists() {
         try(Session session= HibernateUtil.getSession()){
-            session.get();
+           /* Criteria criteria = session.createCriteria(UserRole.class);
+            criteria.setProjection(Projections.rowCount());
+            Long count = (Long) criteria.uniqueResult();*/
+            Query query = session.createQuery("SELECT COUNT(*) FROM user_role");
+            Long count =(Long) query.getSingleResult();
+            return count>0;
         }
     }
 }

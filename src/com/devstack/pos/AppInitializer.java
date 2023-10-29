@@ -1,5 +1,7 @@
 package com.devstack.pos;
 
+import com.devstack.pos.dao.custom.UserRoleDao;
+import com.devstack.pos.dao.custom.impl.UserRoleDaoImpl;
 import com.devstack.pos.db.HibernateUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -37,6 +39,14 @@ public class AppInitializer extends Application {
     }
 
     private void initializeData(){
+        UserRoleDao userRoleDao= new UserRoleDaoImpl();
+        if (!userRoleDao.isExists()){
+
+
+
+        }else{
+            return;
+        }
 
     }
 
