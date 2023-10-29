@@ -3,6 +3,7 @@ package com.devstack.pos.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,5 +27,5 @@ public class User implements SuperEntity{
 
     @ManyToOne
     @JoinColumn(name = "role_id")
-    private Set<UserRole> userRoles;
+    private UserRole userRole;
 }

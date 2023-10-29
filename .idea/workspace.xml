@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="3">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/db/HibernateUtil.java" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="4">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql/mysql-connector-java-8.0.30.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql/mysql-connector.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/db/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/db/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/developer/IdeaProjects/pos-development/pos/lib/mysql/mysql-connector.jar",
+    "last_opened_file_path": "/home/developer/IdeaProjects/pos-development/pos/lib/mysql/mysql-connector-java-8.0.30.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +68,11 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -99,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698553909011</updated>
       <workItem from="1698553909924" duration="1342000" />
-      <workItem from="1698555937736" duration="7103000" />
+      <workItem from="1698555937736" duration="9184000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -125,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698561356188</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4">
+      <option name="closed" value="true" />
+      <created>1698566716879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698566716879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +157,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
