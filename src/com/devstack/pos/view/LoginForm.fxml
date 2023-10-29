@@ -13,7 +13,7 @@
    <children>
       <AnchorPane prefHeight="511.0" prefWidth="355.0">
          <children>
-            <Label layoutX="137.0" layoutY="87.0" text="Welcome to " />
+            <Label layoutX="137.0" layoutY="97.0" text="Welcome to " />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/logo.png" />
