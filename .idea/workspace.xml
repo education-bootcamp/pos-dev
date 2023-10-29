@@ -4,34 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/FastInfoset-1.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/byte-buddy-1.11.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/classmate-1.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/dom4j-2.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-commons-annotations-5.1.2.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/hibernate-core-5.4.33.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/istack-commons-runtime-3.0.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/jandex-2.2.3.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/javassist-3.27.0-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/javax.activation-api-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/javax.persistence-api-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/jaxb-api-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/jaxb-runtime-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/jboss-logging-3.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/stax-ex-1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hibernate/txw2-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/lombok/lombok.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/SuperEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/lib/mysql/mysql-connector.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +22,16 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -69,7 +51,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/developer/IdeaProjects/pos-development/pos/lib/lombok/lombok.jar",
+    "last_opened_file_path": "/home/developer/IdeaProjects/pos-development/pos/lib/mysql/mysql-connector.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/mysql" />
       <recent name="$PROJECT_DIR$/lib/lombok" />
       <recent name="$PROJECT_DIR$/lib/hibernate" />
       <recent name="$PROJECT_DIR$/lib/jfonix" />
@@ -119,12 +102,25 @@
       <option name="presentableId" value="Default" />
       <updated>1698553909011</updated>
       <workItem from="1698553909924" duration="1342000" />
-      <workItem from="1698555937736" duration="3642000" />
+      <workItem from="1698555937736" duration="5277000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1698559651070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698559651071</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
