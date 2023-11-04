@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="8">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/assets/icons/icons8-arrow-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/assets/icons/icons8-hamburger-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/AdminPortalViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/AdminPortalView.fxml" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +108,7 @@
       <workItem from="1698555937736" duration="14174000" />
       <workItem from="1698574480866" duration="1099000" />
       <workItem from="1698842186764" duration="922000" />
-      <workItem from="1699069122993" duration="2026000" />
+      <workItem from="1699069122993" duration="2862000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -188,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698574984841</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="9">
+      <option name="closed" value="true" />
+      <created>1699071840583</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699071840583</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +205,8 @@
     <MESSAGE value="6" />
     <MESSAGE value="7" />
     <MESSAGE value="8" />
-    <option name="LAST_COMMIT_MESSAGE" value="8" />
+    <MESSAGE value="9" />
+    <option name="LAST_COMMIT_MESSAGE" value="9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
