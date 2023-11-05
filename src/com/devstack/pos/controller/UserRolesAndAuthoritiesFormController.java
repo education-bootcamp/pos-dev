@@ -26,7 +26,8 @@ public class UserRolesAndAuthoritiesFormController {
         stage.centerOnScreen();
     }
 
-    public void manageUserRoleOnAction(MouseEvent mouseEvent) {
+    public void manageUserRoleOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("ManageUserRoleForm");
     }
 
     public void managePrivilegesOnAction(MouseEvent mouseEvent) {
