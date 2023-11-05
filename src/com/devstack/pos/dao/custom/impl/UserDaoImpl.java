@@ -36,4 +36,12 @@ public class UserDaoImpl implements UserDao {
     public List<User> loadAll() {
         return null;
     }
+
+    @Override
+    public boolean login(String username, String password) {
+        try(Session session = HibernateUtil.getSession()){
+            session.createQuery("FROM User WHERE userName=:email");
+        }
+        return false;
+    }
 }

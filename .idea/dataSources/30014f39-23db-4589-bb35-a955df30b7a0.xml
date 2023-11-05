@@ -1294,8 +1294,8 @@
     </schema>
     <schema id="514" parent="1" name="pos">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-10-29.19:38:16</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-29.08:38:16</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-05.18:36:47</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-05.07:36:47</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="515" parent="1" name="mariadb.sys">
@@ -1316,7 +1316,7 @@
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
     <column id="520" parent="518" name="property_id">
-      <DasType>int(11)|0s</DasType>
+      <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
@@ -1340,7 +1340,7 @@
       <Position>5</Position>
     </column>
     <column id="525" parent="518" name="role_id">
-      <DasType>int(11)|0s</DasType>
+      <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
     <foreign-key id="526" parent="518" name="FK8sm2hb5rooccdecbbsh2o96ps">
@@ -1363,7 +1363,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="530" parent="519" name="property_id">
-      <DasType>int(11)|0s</DasType>
+      <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>

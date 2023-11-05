@@ -6,6 +6,7 @@ import com.devstack.pos.db.HibernateUtil;
 import com.devstack.pos.entity.User;
 import com.devstack.pos.entity.UserRole;
 import com.devstack.pos.util.KeyGenerator;
+import com.devstack.pos.util.PasswordGenerator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -59,7 +60,7 @@ public class AppInitializer extends Application {
                 User systemUser = new User();
                 systemUser.setPropertyId(KeyGenerator.generateId());
                 systemUser.setUsername("hasikasandaruwan.info@gmail.com");
-                systemUser.setPassword("1234");
+                systemUser.setPassword(PasswordGenerator.passwordGen(6));
                 systemUser.setDisplayName("Hasika Sandaruwan");
                 systemUser.setActiveState(true);
                 systemUser.setUserRole(adminRole);
