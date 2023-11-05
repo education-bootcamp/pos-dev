@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newSystemUserContext" prefHeight="789.0" prefWidth="1316.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.NewSystemUserFormController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1316.0" style="-fx-background-color: #34495E;">
+         <children>
+            <Label layoutX="62.0" layoutY="19.0" text="New System User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="857.0" layoutY="9.0" prefHeight="35.0" prefWidth="251.0" />
+            <Label layoutX="1122.0" layoutY="19.0" text="Hasika Sandaruwan" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="1280.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/icons8-arrow-48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="13.0" onAction="#backToHomeOnAction" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXComboBox layoutX="14.0" layoutY="77.0" prefHeight="35.0" prefWidth="200.0" promptText="User Role" />
+      <JFXTextField layoutX="237.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Username" />
+      <JFXTextField layoutX="476.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Display Name" />
+      <JFXButton buttonType="RAISED" layoutX="714.0" layoutY="80.0" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #3498db;" text="Submit Data" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField layoutX="14.0" layoutY="130.0" prefHeight="35.0" prefWidth="444.0" promptText="Search here" />
+      <TableView layoutX="14.0" layoutY="185.0" prefHeight="592.0" prefWidth="1288.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="#Id" />
+          <TableColumn prefWidth="158.0" text="User Role" />
+            <TableColumn prefWidth="117.0" text="Status" />
+            <TableColumn prefWidth="224.0" text="Display Name" />
+            <TableColumn prefWidth="366.0" text="Email" />
+            <TableColumn prefWidth="174.0" text="Delete" />
+            <TableColumn prefWidth="173.0" text="Modify" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

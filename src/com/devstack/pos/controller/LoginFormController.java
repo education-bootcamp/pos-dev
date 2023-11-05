@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -16,7 +15,7 @@ public class LoginFormController {
         Stage stage = (Stage)loginContext.getScene().getWindow();
         stage.setScene(
                 new Scene(
-                        FXMLLoader.load(getClass().getResource("../view/AdminPortalView.fxml"))
+                        FXMLLoader.load(getClass().getResource("../view/AdminPortalForm.fxml"))
                 )
         );
         stage.centerOnScreen();

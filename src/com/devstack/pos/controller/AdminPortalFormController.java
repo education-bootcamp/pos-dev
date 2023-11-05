@@ -8,11 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminPortalViewController {
+public class AdminPortalFormController {
     public AnchorPane adminPortalContext;
 
     public void userManagementOnAction(ActionEvent actionEvent) throws IOException {
-        setUi("UserManagementView");
+        setUi("UserManagementForm");
     }
 
     public void userRolesAndAuthoritiesOnAction(ActionEvent actionEvent) {
