@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="14">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ManageAccessPointFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ManageAccessPointForm.fxml" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="15">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/ManagePrivilegesFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ManagePrivilegesForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserRolesAndAuthoritiesFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserRolesAndAuthoritiesFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/ManageAccessPointForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/ManageAccessPointForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1698574480866" duration="1099000" />
       <workItem from="1698842186764" duration="922000" />
       <workItem from="1699069122993" duration="5238000" />
-      <workItem from="1699155680906" duration="4404000" />
+      <workItem from="1699155680906" duration="5439000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -234,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699158993493</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="15">
+      <option name="closed" value="true" />
+      <created>1699160191334</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699160191334</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +264,8 @@
     <MESSAGE value="12" />
     <MESSAGE value="13" />
     <MESSAGE value="14" />
-    <option name="LAST_COMMIT_MESSAGE" value="14" />
+    <MESSAGE value="15" />
+    <option name="LAST_COMMIT_MESSAGE" value="15" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
