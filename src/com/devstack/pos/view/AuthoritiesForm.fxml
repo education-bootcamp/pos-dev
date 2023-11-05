@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="authoritiesContext" prefHeight="424.0" prefWidth="1316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.AuthoritiesFormController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1316.0" style="-fx-background-color: #34495E;">
+         <children>
+            <Label layoutX="62.0" layoutY="17.0" text="Authorities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="857.0" layoutY="9.0" prefHeight="35.0" prefWidth="251.0" />
+            <Label layoutX="1122.0" layoutY="19.0" text="Hasika Sandaruwan" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="1280.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/icons8-arrow-48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="8.0" layoutY="8.0" onAction="#backToHomeOnAction" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="25.0" layoutY="74.0" prefHeight="35.0" prefWidth="521.0" promptText="Search here" />
+      <TableView layoutX="25.0" layoutY="123.0" prefHeight="294.0" prefWidth="1271.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="#Id" />
+          <TableColumn prefWidth="214.0" text="Username" />
+            <TableColumn prefWidth="258.0" text="Availability" />
+            <TableColumn prefWidth="431.0" text="User Role" />
+            <TableColumn prefWidth="291.0" text="Display Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

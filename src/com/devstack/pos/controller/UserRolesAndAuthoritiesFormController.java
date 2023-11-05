@@ -34,7 +34,8 @@ public class UserRolesAndAuthoritiesFormController {
         setUi("ManagePrivilegesForm");
     }
 
-    public void authoritiesOnAction(MouseEvent mouseEvent) {
+    public void authoritiesOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("AuthoritiesForm");
     }
 
     public void manageAccessPointOnAction(MouseEvent mouseEvent) throws IOException {
