@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="manageAccessPointContext" prefHeight="538.0" prefWidth="1316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ManageAccessPointFormController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1316.0" style="-fx-background-color: #34495E;">
+         <children>
+            <Label layoutX="62.0" layoutY="17.0" text="Manage Access Points" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="857.0" layoutY="9.0" prefHeight="35.0" prefWidth="251.0" />
+            <Label layoutX="1122.0" layoutY="19.0" text="Hasika Sandaruwan" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="1280.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/icons8-arrow-48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="8.0" layoutY="8.0" onAction="#backToHomeOnAction" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField layoutX="24.0" layoutY="96.0" prefHeight="35.0" prefWidth="539.0" promptText="Access point name" />
+      <JFXButton buttonType="RAISED" layoutX="574.0" layoutY="97.0" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #3498DB;" text="Submit data" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField layoutX="24.0" layoutY="151.0" prefHeight="35.0" prefWidth="686.0" promptText="Search here" />
+      <TableView layoutX="24.0" layoutY="200.0" prefHeight="321.0" prefWidth="1284.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="#Id" />
+            <TableColumn prefWidth="588.0" text="Display Name" />
+            <TableColumn prefWidth="445.0" text="Delete" />
+            <TableColumn prefWidth="173.0" text="Modify" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

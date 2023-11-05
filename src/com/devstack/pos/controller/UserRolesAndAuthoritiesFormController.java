@@ -31,12 +31,13 @@ public class UserRolesAndAuthoritiesFormController {
     }
 
     public void managePrivilegesOnAction(MouseEvent mouseEvent) {
+
     }
 
     public void authoritiesOnAction(MouseEvent mouseEvent) {
     }
 
-    public void manageAccessPointOnAction(MouseEvent mouseEvent) {
-
+    public void manageAccessPointOnAction(MouseEvent mouseEvent) throws IOException {
+        setUi("ManageAccessPointForm");
     }
 }
