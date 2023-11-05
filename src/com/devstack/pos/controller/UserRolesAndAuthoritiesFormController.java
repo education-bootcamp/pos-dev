@@ -9,15 +9,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class UserManagementFormController {
-    public AnchorPane userManagementContext;
+public class UserRolesAndAuthoritiesFormController {
+    public AnchorPane userRoleAndAuthorityContext;
 
     public void backToHome(ActionEvent actionEvent) throws IOException {
-        setUi("AdminPortalForm");
+        setUi("UserManagementForm");
     }
 
     private void setUi(String location) throws IOException {
-        Stage stage = (Stage)userManagementContext.getScene().getWindow();
+        Stage stage = (Stage)userRoleAndAuthorityContext.getScene().getWindow();
         stage.setScene(
                 new Scene(
                         FXMLLoader.load(getClass().getResource("../view/"+location+".fxml"))
@@ -26,11 +26,16 @@ public class UserManagementFormController {
         stage.centerOnScreen();
     }
 
-    public void manageSystemUserOnAction(MouseEvent mouseEvent) throws IOException {
-        setUi("NewSystemUserForm");
+    public void manageUserRoleOnAction(MouseEvent mouseEvent) {
     }
 
-    public void newUserRoleOnAction(MouseEvent mouseEvent) throws IOException {
-        setUi("UserRolesAndAuthoritiesForm");
+    public void managePrivilegesOnAction(MouseEvent mouseEvent) {
+    }
+
+    public void authoritiesOnAction(MouseEvent mouseEvent) {
+    }
+
+    public void manageAccessPointOnAction(MouseEvent mouseEvent) {
+
     }
 }

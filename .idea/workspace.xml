@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="11">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/NewSystemUserFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/NewSystemUserForm.fxml" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="12">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserRolesAndAuthoritiesFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/UserRolesAndAuthoritiesForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/AdminPortalViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/AdminPortalFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserManagementViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserManagementFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/AdminPortalView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/AdminPortalForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/UserManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/UserManagementForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserManagementFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/UserManagementFormController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,7 @@
       <workItem from="1698574480866" duration="1099000" />
       <workItem from="1698842186764" duration="922000" />
       <workItem from="1699069122993" duration="5238000" />
-      <workItem from="1699155680906" duration="635000" />
+      <workItem from="1699155680906" duration="2126000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -215,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699074861207</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="12">
+      <option name="closed" value="true" />
+      <created>1699156376856</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699156376856</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +236,8 @@
     <MESSAGE value="9" />
     <MESSAGE value="10" />
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="12" />
+    <option name="LAST_COMMIT_MESSAGE" value="12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
