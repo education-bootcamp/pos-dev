@@ -19,8 +19,8 @@
                   <Image url="@../assets/logo.png" />
                </image>
             </ImageView>
-            <TextField layoutX="29.0" layoutY="180.0" prefHeight="39.0" prefWidth="296.0" promptText="Username" />
-            <PasswordField layoutX="29.0" layoutY="232.0" prefHeight="39.0" prefWidth="296.0" promptText="Password" />
+            <TextField fx:id="txtUsername" layoutX="29.0" layoutY="180.0" prefHeight="39.0" prefWidth="296.0" promptText="Username" />
+            <PasswordField fx:id="txtPassword" layoutX="29.0" layoutY="232.0" prefHeight="39.0" prefWidth="296.0" promptText="Password" />
             <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="285.0" onAction="#loginOnAction" prefHeight="49.0" prefWidth="296.0" style="-fx-background-color: #2980B9;" text="Sign In" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />

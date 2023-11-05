@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="18">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jBCrypt_0_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/bcrypt/jBCrypt-0.4.3.jar" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="19">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/util/ResponseData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0/storage_v2/_src_/schema/pos.VLIBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0/storage_v2/_src_/schema/pos.VLIBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/util/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/util/PasswordGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,7 @@
       <workItem from="1698842186764" duration="922000" />
       <workItem from="1699069122993" duration="5238000" />
       <workItem from="1699155680906" duration="8359000" />
-      <workItem from="1699168625738" duration="1428000" />
+      <workItem from="1699168625738" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -275,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699163238214</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="19">
+      <option name="closed" value="true" />
+      <created>1699170100392</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1699170100392</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +308,8 @@
     <MESSAGE value="16" />
     <MESSAGE value="17" />
     <MESSAGE value="18" />
-    <option name="LAST_COMMIT_MESSAGE" value="18" />
+    <MESSAGE value="19" />
+    <option name="LAST_COMMIT_MESSAGE" value="19" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
