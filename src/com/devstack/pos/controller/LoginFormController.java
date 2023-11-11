@@ -35,7 +35,6 @@ public class LoginFormController {
                         )
                 );
                 stage.centerOnScreen();
-                new Alert(Alert.AlertType.INFORMATION, data.getMessage()).show();
             }else{
                 new Alert(Alert.AlertType.WARNING,data.getMessage()).show();
             }

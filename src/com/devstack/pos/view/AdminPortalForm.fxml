@@ -258,13 +258,5 @@
          <cursor>
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor></JFXButton>
-      <BarChart layoutX="24.0" layoutY="301.0" prefHeight="507.0" prefWidth="873.0">
-         <xAxis>
-            <CategoryAxis side="BOTTOM" />
-         </xAxis>
-         <yAxis>
-            <NumberAxis side="LEFT" />
-         </yAxis>
-      </BarChart>
    </children>
 </AnchorPane>

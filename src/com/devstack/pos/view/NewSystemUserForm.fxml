@@ -46,13 +46,16 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <JFXComboBox layoutX="14.0" layoutY="77.0" prefHeight="35.0" prefWidth="200.0" promptText="User Role" />
-      <JFXTextField layoutX="237.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Username" />
-      <JFXTextField layoutX="476.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Display Name" />
-      <JFXButton buttonType="RAISED" layoutX="714.0" layoutY="80.0" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #3498db;" text="Submit Data" textFill="WHITE">
+      <JFXComboBox fx:id="cmbUserRole" layoutX="14.0" layoutY="77.0" prefHeight="35.0" prefWidth="200.0" promptText="User Role" />
+      <JFXTextField fx:id="txtUserName" layoutX="237.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Username" />
+      <JFXTextField fx:id="txtDisplayName" layoutX="476.0" layoutY="77.0" prefHeight="35.0" prefWidth="219.0" promptText="Display Name" />
+      <JFXButton buttonType="RAISED" layoutX="714.0" layoutY="80.0" onAction="#createSystemUser" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #3498db;" text="Submit Data" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
       </JFXButton>
       <TextField layoutX="14.0" layoutY="130.0" prefHeight="35.0" prefWidth="444.0" promptText="Search here" />
       <TableView layoutX="14.0" layoutY="185.0" prefHeight="592.0" prefWidth="1288.0">

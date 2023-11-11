@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="20">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/BoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/SuperBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/UserBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/impl/UserBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0/storage_v2/_src_/schema/pos.VLIBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30014f39-23db-4589-bb35-a955df30b7a0/storage_v2/_src_/schema/pos.VLIBAA.meta" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/CrudDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/CrudDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/NewSystemUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/NewSystemUserFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/AdminPortalForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/AdminPortalForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/NewSystemUserForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/NewSystemUserForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +126,7 @@
       <workItem from="1699285578360" duration="31000" />
       <workItem from="1699630899704" duration="16000" />
       <workItem from="1699631280823" duration="91000" />
-      <workItem from="1699674071077" duration="839000" />
+      <workItem from="1699674071077" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -300,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699171584841</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="21">
+      <option name="closed" value="true" />
+      <created>1699675171879</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699675171879</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +332,8 @@
     <MESSAGE value="18" />
     <MESSAGE value="19" />
     <MESSAGE value="20" />
-    <option name="LAST_COMMIT_MESSAGE" value="20" />
+    <MESSAGE value="21" />
+    <option name="LAST_COMMIT_MESSAGE" value="21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
