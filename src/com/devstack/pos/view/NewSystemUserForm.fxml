@@ -57,7 +57,7 @@
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
       </JFXButton>
-      <TextField layoutX="14.0" layoutY="130.0" prefHeight="35.0" prefWidth="444.0" promptText="Search here" />
+      <TextField fx:id="txtSearchText" layoutX="14.0" layoutY="130.0" prefHeight="35.0" prefWidth="444.0" promptText="Search here" />
       <TableView fx:id="tblUsers" layoutX="14.0" layoutY="185.0" prefHeight="592.0" prefWidth="1288.0">
         <columns>
           <TableColumn fx:id="colId" prefWidth="75.0" text="#Id" />

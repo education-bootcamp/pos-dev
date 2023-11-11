@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -40,6 +41,7 @@ public class NewSystemUserFormController {
     public TableColumn<SystemUserTM,String> colEmail;
     public TableColumn<SystemUserTM,Button> colDelete;
     public TableColumn<SystemUserTM, Button> colModify;
+    public TextField txtSearchText;
 
     private UserRoleBo userRoleBo= BoFactory.getBo(BoFactory.BoType.USER_ROLE);
     private UserBo userBo= BoFactory.getBo(BoFactory.BoType.USER);
@@ -62,6 +64,13 @@ public class NewSystemUserFormController {
 
         loadAllUserRoles();
         loadAllSystemUser();
+
+
+        txtSearchText.textProperty().addListener((observable, oldValue, newValue) -> {
+            searchText=newValue;
+            loadAllSystemUser();
+        });
+
     }
 
     private void loadAllSystemUser() {
