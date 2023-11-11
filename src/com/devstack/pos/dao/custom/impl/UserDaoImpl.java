@@ -3,6 +3,7 @@ package com.devstack.pos.dao.custom.impl;
 import com.devstack.pos.dao.custom.UserDao;
 import com.devstack.pos.db.HibernateUtil;
 import com.devstack.pos.entity.User;
+import com.devstack.pos.entity.UserRole;
 import com.devstack.pos.util.PasswordGenerator;
 import com.devstack.pos.util.ResponseData;
 import org.hibernate.Session;
@@ -55,6 +56,14 @@ public class UserDaoImpl implements UserDao {
             }else{
                 return new ResponseData(false,"something went wrong with the Username or the active state, please contact the admin");
             }
+        }
+    }
+
+    @Override
+    public List<User> loadAllUsers(String searchText) {
+        try(Session session= HibernateUtil.getSession()){
+            Query<User> userQuery = session.createQuery("FROM User", User.class);
+            return userQuery.list();
         }
     }
 }

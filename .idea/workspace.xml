@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="22">
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/UserRoleBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/impl/UserRoleBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/UserRoleDto.java" afterDir="false" />
+    <list default="true" id="107c1d44-de75-4c6d-b3d5-5161e8a4e76b" name="Changes" comment="23">
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/tm/SystemUserTM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/bo/BoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/BoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/UserBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/UserBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/impl/UserBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/bo/custom/impl/UserBoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/controller/NewSystemUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/controller/NewSystemUserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserRoleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserRoleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/dao/custom/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/devstack/pos/view/NewSystemUserForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/devstack/pos/view/NewSystemUserForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +129,7 @@
       <workItem from="1699285578360" duration="31000" />
       <workItem from="1699630899704" duration="16000" />
       <workItem from="1699631280823" duration="91000" />
-      <workItem from="1699674071077" duration="3405000" />
+      <workItem from="1699674071077" duration="5209000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -313,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699676308147</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="23">
+      <option name="closed" value="true" />
+      <created>1699677568808</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699677568808</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +353,8 @@
     <MESSAGE value="20" />
     <MESSAGE value="21" />
     <MESSAGE value="22" />
-    <option name="LAST_COMMIT_MESSAGE" value="22" />
+    <MESSAGE value="23" />
+    <option name="LAST_COMMIT_MESSAGE" value="23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

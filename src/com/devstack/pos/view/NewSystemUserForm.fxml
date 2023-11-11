@@ -58,15 +58,15 @@
          </cursor>
       </JFXButton>
       <TextField layoutX="14.0" layoutY="130.0" prefHeight="35.0" prefWidth="444.0" promptText="Search here" />
-      <TableView layoutX="14.0" layoutY="185.0" prefHeight="592.0" prefWidth="1288.0">
+      <TableView fx:id="tblUsers" layoutX="14.0" layoutY="185.0" prefHeight="592.0" prefWidth="1288.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="#Id" />
-          <TableColumn prefWidth="158.0" text="User Role" />
-            <TableColumn prefWidth="117.0" text="Status" />
-            <TableColumn prefWidth="224.0" text="Display Name" />
-            <TableColumn prefWidth="366.0" text="Email" />
-            <TableColumn prefWidth="174.0" text="Delete" />
-            <TableColumn prefWidth="173.0" text="Modify" />
+          <TableColumn fx:id="colId" prefWidth="75.0" text="#Id" />
+          <TableColumn fx:id="colUserRole" prefWidth="158.0" text="User Role" />
+            <TableColumn fx:id="colStatus" prefWidth="117.0" text="Status" />
+            <TableColumn fx:id="colDisplayName" prefWidth="224.0" text="Display Name" />
+            <TableColumn fx:id="colEmail" prefWidth="366.0" text="Email" />
+            <TableColumn fx:id="colDelete" prefWidth="174.0" text="Delete" />
+            <TableColumn fx:id="colModify" prefWidth="173.0" text="Modify" />
         </columns>
       </TableView>
    </children>

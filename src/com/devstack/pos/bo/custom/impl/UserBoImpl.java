@@ -5,6 +5,8 @@ import com.devstack.pos.dao.DaoFactory;
 import com.devstack.pos.dao.custom.UserDao;
 import com.devstack.pos.dao.custom.UserRoleDao;
 import com.devstack.pos.db.HibernateUtil;
+import com.devstack.pos.dto.UserDto;
+import com.devstack.pos.dto.UserRoleDto;
 import com.devstack.pos.entity.User;
 import com.devstack.pos.entity.UserRole;
 import com.devstack.pos.util.KeyGenerator;
@@ -12,8 +14,12 @@ import com.devstack.pos.util.PasswordGenerator;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserBoImpl implements UserBo {
     UserRoleDao userRoleDao= DaoFactory.getDao(DaoFactory.DaoType.USER_ROLE);
+    UserDao userDao= DaoFactory.getDao(DaoFactory.DaoType.USER);
 
     @Override
     public void initializeSystem() {
@@ -50,5 +56,22 @@ public class UserBoImpl implements UserBo {
             }
 
         }
+    }
+
+    @Override
+    public List<UserDto> loadAllUsers(String searchText) {
+        List<UserDto> dtos = new ArrayList<>();
+        for (User user:userDao.loadAllUsers(searchText)
+             ) {
+            dtos.add(
+                    new UserDto(user.getPropertyId(),
+                            user.getUsername(), user.getPassword(), user.getDisplayName(),
+                            user.isActiveState(),
+                            new UserRoleDto(user.getUserRole().getPropertyId(),
+                                    user.getUserRole().getRoleName(),
+                                    user.getUserRole().getRoleDescription()))
+            );
+        }
+        return dtos;
     }
 }
