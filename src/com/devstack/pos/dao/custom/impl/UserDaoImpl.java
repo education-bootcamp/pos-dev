@@ -64,8 +64,8 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> loadAllUsers(String searchText) {
         try(Session session= HibernateUtil.getSession()){
-            Query<User> userQuery = session.createQuery("SELECT u FROM User u WHERE u.displayName=:name", User.class);
-            userQuery.setParameter("name",searchText);
+            Query<User> userQuery = session.createQuery("SELECT u FROM User u WHERE u.displayName LIKE :name", User.class);
+            userQuery.setParameter("name","%"+searchText+"%");
             return userQuery.getResultList();
         }
     }
