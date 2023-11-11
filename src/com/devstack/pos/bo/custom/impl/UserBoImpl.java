@@ -74,4 +74,9 @@ public class UserBoImpl implements UserBo {
         }
         return dtos;
     }
+
+    @Override
+    public void createNewSystemUser(Long roleId, String displayName, String email) {
+        userDao.createNewSystemUser(roleId,displayName,email);
+    }
 }
