@@ -10,4 +10,5 @@ public interface UserBo {
     public void initializeSystem();
     public List<UserDto> loadAllUsers(String searchText);
     public void createNewSystemUser(Long roleId, String displayName, String email);
+    public boolean dropUser(Long userId);
 }

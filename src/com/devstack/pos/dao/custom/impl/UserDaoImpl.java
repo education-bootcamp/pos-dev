@@ -30,7 +30,21 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public boolean remove(Long id) {
-        return false;
+       try(Session session= HibernateUtil.getSession()){
+           Transaction transaction = session.beginTransaction();
+           Query<User> query = session.createQuery("FROM User u WHERE u.propertyId=:id", User.class);
+           query.setParameter("id",id);
+           User user = query.uniqueResult();
+
+           if(user!=null){
+               session.remove(user);
+               transaction.commit();
+               return true;
+           }else{
+               throw new RuntimeException("User not found!");
+           }
+
+       }
     }
 
     @Override

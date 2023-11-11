@@ -79,4 +79,9 @@ public class UserBoImpl implements UserBo {
     public void createNewSystemUser(Long roleId, String displayName, String email) {
         userDao.createNewSystemUser(roleId,displayName,email);
     }
+
+    @Override
+    public boolean dropUser(Long userId) {
+        return userDao.remove(userId);
+    }
 }
