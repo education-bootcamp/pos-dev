@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="manageAccessPointContext" prefHeight="538.0" prefWidth="1316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.pos.controller.ManageAccessPointFormController">
    <children>
       <AnchorPane prefHeight="56.0" prefWidth="1316.0" style="-fx-background-color: #34495E;">
@@ -46,8 +45,8 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <JFXTextField layoutX="24.0" layoutY="96.0" prefHeight="35.0" prefWidth="539.0" promptText="Access point name" />
-      <JFXButton buttonType="RAISED" layoutX="574.0" layoutY="97.0" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #3498DB;" text="Submit data" textFill="WHITE">
+      <JFXTextField fx:id="txtAccessPoint" layoutX="24.0" layoutY="96.0" prefHeight="35.0" prefWidth="539.0" promptText="Access point name" />
+      <JFXButton buttonType="RAISED" layoutX="574.0" layoutY="97.0" onAction="#btnSubmitOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #3498DB;" text="Submit data" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor>
