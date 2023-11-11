@@ -37,7 +37,10 @@ public class UserRoleDaoImpl implements UserRoleDao {
 
     @Override
     public List<UserRole> loadAll() {
-        return null;
+        try(Session session= HibernateUtil.getSession()){
+            Query<UserRole> userRoleQuery = session.createQuery("FROM UserRole", UserRole.class);
+            return userRoleQuery.list();
+        }
     }
 
     @Override

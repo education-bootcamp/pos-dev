@@ -1,7 +1,14 @@
 package com.devstack.pos.controller;
 
+import com.devstack.pos.bo.BoFactory;
+import com.devstack.pos.bo.custom.UserRoleBo;
+import com.devstack.pos.dao.DaoFactory;
+import com.devstack.pos.dao.custom.UserRoleDao;
+import com.devstack.pos.dto.UserRoleDto;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,14 +25,22 @@ public class NewSystemUserFormController {
     public JFXTextField txtUserName;
     public JFXTextField txtDisplayName;
 
-    private List<String> roles= new ArrayList<>();
+    private UserRoleBo userRoleBo= BoFactory.getBo(BoFactory.BoType.USER_ROLE);
+
+    private ObservableList<String> observableList= FXCollections.observableArrayList();
+    private List<UserRoleDto> userRoleDtos = new ArrayList<>();
 
     public void initialize(){
         loadAllUserRoles();
     }
 
     private void loadAllUserRoles() {
-
+        userRoleDtos=userRoleBo.loadAllUserRoles();
+        for (UserRoleDto dto: userRoleDtos
+             ) {
+        observableList.add(dto.getRoleName());
+        }
+        cmbUserRole.setItems(observableList);
     }
 
     public void backToHomeOnAction(ActionEvent actionEvent) throws IOException {
