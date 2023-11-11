@@ -27,7 +27,7 @@ public class LoginFormController {
         ResponseData data = userDao.login(txtUsername.getText().trim(), txtPassword.getText().trim());
         if(null!=data){
             if((boolean)data.getData()){
-                new Alert(Alert.AlertType.INFORMATION, data.getMessage()).show();
+
                 Stage stage = (Stage)loginContext.getScene().getWindow();
                 stage.setScene(
                         new Scene(
@@ -35,6 +35,7 @@ public class LoginFormController {
                         )
                 );
                 stage.centerOnScreen();
+                new Alert(Alert.AlertType.INFORMATION, data.getMessage()).show();
             }else{
                 new Alert(Alert.AlertType.WARNING,data.getMessage()).show();
             }

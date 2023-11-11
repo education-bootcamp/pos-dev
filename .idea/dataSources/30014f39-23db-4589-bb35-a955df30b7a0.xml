@@ -1294,8 +1294,8 @@
     </schema>
     <schema id="514" parent="1" name="pos">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-05.19:04:10</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-05.08:04:10</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-11.14:43:59</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-11.03:43:59</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="515" parent="1" name="mariadb.sys">
@@ -1307,5 +1307,85 @@
     <user id="517" parent="1" name="mysql">
       <Host>localhost</Host>
     </user>
+    <table id="518" parent="514" name="User">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="519" parent="514" name="UserRole">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="520" parent="518" name="property_id">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="521" parent="518" name="active_state">
+      <DasType>bit(1)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="522" parent="518" name="display_name">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="523" parent="518" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="524" parent="518" name="username">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="525" parent="518" name="role_id">
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="526" parent="518" name="FK8sm2hb5rooccdecbbsh2o96ps">
+      <ColNames>role_id</ColNames>
+      <RefColNames>property_id</RefColNames>
+      <RefTableName>UserRole</RefTableName>
+    </foreign-key>
+    <index id="527" parent="518" name="PRIMARY">
+      <ColNames>property_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="528" parent="518" name="FK8sm2hb5rooccdecbbsh2o96ps">
+      <ColNames>role_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="529" parent="518" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="530" parent="519" name="property_id">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="531" parent="519" name="role_description">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="532" parent="519" name="role_name">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="533" parent="519" name="PRIMARY">
+      <ColNames>property_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="534" parent="519" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

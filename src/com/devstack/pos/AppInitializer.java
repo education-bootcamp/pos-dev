@@ -1,5 +1,7 @@
 package com.devstack.pos;
 
+import com.devstack.pos.bo.BoFactory;
+import com.devstack.pos.bo.custom.UserBo;
 import com.devstack.pos.dao.custom.UserRoleDao;
 import com.devstack.pos.dao.custom.impl.UserRoleDaoImpl;
 import com.devstack.pos.db.HibernateUtil;
@@ -40,40 +42,8 @@ public class AppInitializer extends Application {
     }
 
     private void initializeData(){
-        UserRoleDao userRoleDao= new UserRoleDaoImpl();
-        if (!userRoleDao.isExists()){
-
-            try(Session session= HibernateUtil.getSession()){
-                Transaction transaction = session.beginTransaction();
-                UserRole adminRole = new UserRole();
-                UserRole userRole = new UserRole();
-
-                adminRole.setPropertyId(KeyGenerator.generateId());
-                adminRole.setRoleName("ADMIN");
-                adminRole.setRoleDescription("Only for the Admin");
-
-                userRole.setPropertyId(KeyGenerator.generateId());
-                userRole.setRoleName("USER");
-                userRole.setRoleDescription("Only for the User");
-
-                //==================
-                User systemUser = new User();
-                systemUser.setPropertyId(KeyGenerator.generateId());
-                systemUser.setUsername("hasikasandaruwan.info@gmail.com");
-                systemUser.setPassword(PasswordGenerator.passwordGen(6));
-                systemUser.setDisplayName("Hasika Sandaruwan");
-                systemUser.setActiveState(true);
-                systemUser.setUserRole(adminRole);
-
-                session.save(adminRole);
-                session.save(userRole);
-                session.save(systemUser);
-
-                transaction.commit();
-            }
-
-        }
-
+        UserBo userBo= BoFactory.getBo(BoFactory.BoType.USER);
+        userBo.initializeSystem();
     }
 
 }
